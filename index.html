@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Tech-Doc.css">
+	
+</head>
+<body>
+	<nav id="navbar">
+		<header>Python Documentation</header>
+		<ul>
+			<li> 
+				<a href="#Introduction" class="nav-link">Introduction</a>
+			</li>
+			<li class="drop">
+				<a href="#Data_Types" class="nav-link">Data Types</a>
+				<div class="drop-content">
+					<a href="#Numbers">Numbers</a>
+					<a href="#Integers">Integers</a>
+					<a href="#Floats">Floats</a>
+					<a href="#Complex_Numbers">Complex Numbers</a>
+					<a href="#Strings">Strings</a>
+					<a href="#Booleans">Booleans</a>
+				</div>
+			</li>
+			<li> 
+				<a href="#Variables" class="nav-link">Variables</a>
+			</li>
+			<li> 
+				<a href="#Comments" class="nav-link">Comments</a>
+			</li>
+			<li> 
+				<a href="#Reference" class="nav-link">Reference</a>
+			</li>
+		</ul>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header>Introduction</header>
+			<p>	Python is hot primarily because it has all the right stuﬀ for the kind of software 			development that’s really driving the whole software development world
+				these days. Machine learning, robotics, artifcial intelligence, and data science are
+				the leading technologies today and for the foreseeable future. Python is popular
+				mainly because it already has lots of capabilities in those areas, while many older
+				languages lag behind in these technologies.
+			</p>
+			<p> If you’re not familiar with programming languages like C and Java, feel free to
+				skip to the next section, as this information is only for people
+				who wonder about diﬀerences among the languages. But in case you’re wondering, just as there are diﬀerent brands of toothpaste, shampoo, cars, and just about
+				every other product you can buy, there are diﬀerent “brands” of programming
+				languages with names like Java, C, C++ (pronounced C plus plus), and C# (pronounced
+				C sharp). They’re all programming languages, just like all brands of toothpaste are
+				toothpaste. The main reasons cited for Python’s current popularity are:					
+			</p>
+			<ul>
+				<li>Python is relatively easy to learn</li>
+				<li>Everything you need to learn (and do) Python is free.</li>
+				<li>Python oﬀers more readymade tools for current hot technologies like data
+					science, machine learning, artifcial intelligence, and robotics than most other
+					languages.
+				</li>
+			</ul>
+		</section>
+		
+		<section class="main-section" id="Data_Types">
+			<header>Data Types</header>
+			<p> You deal with written information all the time and probably don’t think about
+				the diﬀerence between numbers and text (that is, letters and words). But there’s
+				a big diﬀerence between numbers and text in a computer because with numbers, you can do arithmetic (add, subtract, multiple, divide). For example, everybody
+				knows that 1+1 = 2. The same doesn’t apply to letters and words. The expression
+				A+A doesn’t necessary equal B or AA or anything else because unlike numbers,
+				letters and words aren’t quantities.		
+			</p>
+			
+			<section id="Numbers" class="sub-section">
+				<header>Numbers</header>
+				<p> 
+					Numbers in Python must start with a number digit, (0-9); a dot (period), which
+					is a decimal point; or a hyphen (-) used as a negative sign for negative numbers.
+					A number can contain only one decimal point. It should contain no letters, spaces,
+					dollar signs, or anything else that isn’t part of a normal number.
+				</p>
+			</section>
+			
+			<section id="Integers" class="sub-section">
+				<header>Integers</header>
+				<p> 
+					An integer is any whole number, positive or negative. There is no limit to its size.
+					Numbers like 0, -1, and 999999999999999 are all perfectly valid integers. From
+					your perspective, an integer is just any valid number that doesn’t contain a decimal point.
+				</p>
+			</section>
+			
+			<section id="Floats" class="sub-section">
+				<header>Floats</header>
+				<p> 
+					A ﬂoating point number, often called a ﬂoat for short, is just any valid number that contains a decimal point. Again, there is no size limit, 1.1 and -1.1 and
+					123456.789012345 are all perfectly valid ﬂoats.
+				</p>
+				<P> 
+					If you happen to work with very large scientifc numbers, you can put an e in a
+					number to indicate the power of 10. For example, 234e1000 is a valid number, and
+					will be treated as a ﬂoat even if there’s no decimal point. If you’re familiar with
+					scientifc notation, you know 234e3 is 234,000 (replace the e3 with 3 zeroes). If
+					you’re not familiar with scientifc notation, don’t worry about it. If you’re not
+					using it in your day-to-day work now, chances are you’ll never need it in Python
+					either.
+				</P>
+			</section>
+			
+			<section id="Complex_Numbers" class="sub-section">
+				<header>Complex Numbers</header>
+				<p>
+					Just about any kind of number can be expressed as an integer or ﬂoat, so being
+					familiar with those is sufcient for just about everyone. Though in the interest
+					of being accurate we should point out that Python also supports complex numbers.
+					These bizarre little charmers always end with the letter j, which is the imaginary
+					part of the number. If you have absolutely no idea what we’re talking about, then
+					you’re a normal person because only people who are really “out there” in math
+					land care about these. If you’ve never heard of them before now, chances are you
+					won’t be using them in your computer work or Python programming
+				</p>
+			</section>
+			
+			<section id="Strings" class="sub-section">
+				<header>Strings</header>
+				<p>
+					Strings are sort of the opposite of numbers. Names, addresses, and all other kinds of text you see every day would be a string in Python (and for computers in general). It’s called a string because it’s a string of characters (letters, spaces, punctuation marks,maybe some numbers). Unlike numbers, a string must always be enclosed in quotation marks. You can use either double quotation marks (“) or singles (‘). All the following are valid strings:
+					<code>
+					"Hi there, I am a string"
+					\n'Hello world'
+					"123 Oak Tree Lane"
+					"(267)555-1234"
+					"18901-3384"
+					</code>
+				</p>
+			</section>
+			
+			<section id="Booleans" class="sub-section">
+				<header>Booleans</header>
+				<p>
+					it can be one of two values: either True or False. In Python code, people store True or False values in variables using a format similar to this: 
+					<code>
+						x = True
+					</code>
+					<code>
+						X = False
+					</code>
+				</p>
+				
+				<p>
+					You know True and False are Boolean here because they’re not enclosed in quotation marks (as a string would be), and they’re not numbers. Also, the initial cap is
+					required. In other words, the frst letter has to be capitalized and all the remaining
+					letters after that have to be lowercase.
+				</p>
+			</section>
+		
+		</section>
+		
+		<section class="main-section" id="Variables">
+			<header>Variables</header>
+			<p>
+				Variables are a big part of Python and all computer programming languages.
+				A variable is simply a placeholder for information that may vary (change). 
+			</p>
+			<p>
+				Python variable names have to conform to certain rules to be recognized as variable names. The rules are:
+			</p>
+			<ul>
+				<li>The variable name must start with a letter or underscore (_).</li>
+				<li>After the frst letter you can use letters, numbers, or underscores.</li> 
+				<li>Variable names are case-sensitive, so once you make up a name, any other
+					reference to that variable must use the same uppercase and lowercase letters
+					as the name you originally made up.
+				</li> 
+				<li>Variable names cannot be enclosed in, or contain, single or double quotation
+					marks.
+				</li>
+				<li>PEP 8 style conventions recommend using only lowercase letters in variable
+					names, use an underscore to separate multiple words in the variable name.
+				</li> 
+			</ul>
+			<p>
+				To create a variable, you use the syntax (order of things) as follows:
+				<code>variablename = value</code>
+			</p>
+			<p>
+				<code>x = 10</code>
+				. . . we are storing the number 10 in a variable named x. Or, in other words, we’re
+				assigning the value 10 to the variable named x.
+			</p>
+			<p>
+				Here . . .
+				<code>user_name = "Alan"</code>
+				We’re putting the string Alan in a variable named username.
+			</p>
+		</section>
+		
+		<section class="main-section" id="Comments">
+			<header>Comments</header>
+			<P>
+				A programmer’s comment (usually called a comment for short) is text in the program that
+				does nothing. Because a comment isn’t code, your wording can be anything you want. However, to be identifed as a comment, the text must:
+			</P>
+			<ul>
+				<li>Start with a pound sign</li>
+				<li>Or be enclosed in triple quotation marks</li>
+			</ul>
+			<p>
+				If it’s a short comment (if it doesn’t extend to two or more lines), the leading
+				pound sign is sufcient. Often you’ll see that pound sign followed by a space, as
+				in the example below, but that space is optional:
+			</p>
+			<code><!-- short-code for #-->This is a Python comment</code>
+			<p>
+				Larger comments are sometimes called docstrings. Here’s an example of what one may look like in Python code:
+			<code>
+				<!-- include 3 double quotes -->This is a multiline comment in Python
+				This type of comment is sometimes called a docstring.
+				A docstring starts with three double-quotation marks (""") and also ends with
+				three double quotation marks
+			</code>
+			</p>
+		</section>	
+		
+		<section class="main-section" id="Reference">
+				<header>Reference</header>
+				<p>
+					All the documentation in this page is taken from <a href>Python All-in-One For Dummies®</a>
+				</p>
+		</section>
+		
+	</main>
+</body>
+</html>
